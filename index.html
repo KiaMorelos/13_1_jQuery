@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+ <h1>Rate your Movies!</h1>  
+
+    <form id="enter-movies"> 
+        <label for="movieName">Movie Name: </label> 
+        <input type="text" name="movieName" id ="movieName" placeholder="A Silent Voice" required minlength="2">
+        
+        <label for="rating">Rating: </label> 
+        <input type="number" name="rating" id ="movieRating" placeholder="10" required  min="0" max="10" >
+        
+        <button type="submit">Submit</button>
+        </form>  
+        <!-- <form id="sort-form"> 
+            <label for="sortMovies">Sort by:</label>
+            <select id="sort-movie-list" name="sortMovies">
+              <option value="by movie name A-Z">by movie name A-Z</option>
+              <option value="by movie name Z-A">by movie name Z-A</option>
+              <option value="by higest movie rating">by highest movie rating</option>
+              <option value="by lowest movie rating">by lowest movie rating</option>
+            </select>
+            <button type="submit">Sort</button>
+         </form> -->
+  <table>
+    <thead>
+        <tr>
+            <th>Movie Name</th>
+            <th>Movie Rating</th>
+            <th>Delete Movie</th>
+        </tr>
+    </thead>
+    <tbody id="all-movies">
+
+    </tbody>
+  </table>     
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

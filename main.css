@@ -1,0 +1,33 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sort-form {
+    padding-top:20px;
+}
+
+table {
+    width:100%;
+    padding-top:20px;
+}
+
+table th {
+    padding: 12px;
+    text-align: left;
+    background-color: royalblue;
+    color: white;
+  }
+
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table td {
+   padding:12px;
+}
+
+.center {
+    text-align: center;
+}
+
+
